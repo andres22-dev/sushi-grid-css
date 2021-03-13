@@ -1,6 +1,7 @@
 *{
   --color-primary: #D95030;
   --color-secondary: #000;
+  --color-tertiary: #EA899A; 
   --color-rice: #fff;
   --color-rare: #CDA434;
   --color-sauce: #5E2129;
@@ -15,8 +16,8 @@
 .table{
 /* repeat(3, 200px) 400px 300px / 300px 1fr repeat(2, 200px) 300px; */
   display: grid;
-  grid-template:  300px 1fr repeat(2, 200px) 300px / repeat(3, 300px) 400px 300px ;
-  width: 1400px;
+  grid-template:  300px 300px / repeat(5, 300px);
+  width: auto;
   height: 600px;
   border: 2px solid #000;
 }
@@ -33,19 +34,20 @@
 
 .table .table__atun{
   grid-column: span 1;
-  grid-row: span 1;
-  border-radius: 5px solid var(--color-primary);
-  border: 2px solid #000;
-  
+  grid-row: span 2;
+  border-radius: 50%;
+  border: 20px solid var(--color-secondary);
+  background-color: var(--color-rice);
+
 
 
 }
 .table .table__camaronesGrande{
   grid-column: span 1;
-  grid-row: span 1;
-  border-radius: 5px solid var(--color-primary);
-  border: 2px solid #000;
-  
+  grid-row: span 2;
+  border-radius: 20%;
+  border: 15px solid var(--color-tertiary);
+  background-color: var(--color-rice);
 
 
 }
@@ -54,8 +56,10 @@
 
   grid-column: span 1;
   grid-row: span 1;
-  border-radius: 5px solid var(--color-primary);
-  border: 2px solid #000;
+  border-radius: 50%;
+  border: 20px solid var(--color-primary);
+  background-color: var(--color-rice);
+
   
   
 }
@@ -64,9 +68,52 @@
 
   grid-column: span 1;
   grid-row: span 1;
-  border-radius: 5px solid var(--color-primary);
-  border: 2px solid #000;
-  
+  border-radius: 50%;
+  border: 20px solid var(--color-secondary);
+  background-color: var(--color-rice);
 
 
 }
+
+.table .table_sushisBig{
+
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.table .table__salmonGrande{
+  
+  border-radius: 20%;
+  border: 15px solid var(--color-tertiary);
+  background-color: var(--color-rice);
+}
+
+
+.table .table__camaronesGrande2{
+  
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 20%;
+  border: 15px solid var(--color-tertiary);
+  background-color: var(--color-rice);
+
+}
+
+.table .table__nosedeque{
+
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 20%;
+  border: 15px solid var(--color-rare);
+  background-color: var(--color-rice);
+}
+
+.table .table__tools{
+
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 5px solid var(--color-primary);
+  border: 1px solid #000;
+
+}
+
+
