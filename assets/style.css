@@ -1,0 +1,72 @@
+*{
+  --color-primary: #D95030;
+  --color-secondary: #000;
+  --color-rice: #fff;
+  --color-rare: #CDA434;
+  --color-sauce: #5E2129;
+  --color-chopsticks: #CD7F32;
+  margin: 0;
+  box-sizing: border-box;
+
+
+
+}
+
+.table{
+/* repeat(3, 200px) 400px 300px / 300px 1fr repeat(2, 200px) 300px; */
+  display: grid;
+  grid-template:  300px 1fr repeat(2, 200px) 300px / repeat(3, 300px) 400px 300px ;
+  width: 1400px;
+  height: 600px;
+  border: 2px solid #000;
+}
+
+.table .table__salmon{
+
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius: 50%;
+  border: 20px solid var(--color-primary);
+  background-color: var(--color-rice);
+
+}
+
+.table .table__atun{
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius: 5px solid var(--color-primary);
+  border: 2px solid #000;
+  
+
+
+}
+.table .table__camaronesGrande{
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius: 5px solid var(--color-primary);
+  border: 2px solid #000;
+  
+
+
+}
+
+.table .table__salmon2{
+
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius: 5px solid var(--color-primary);
+  border: 2px solid #000;
+  
+  
+}
+
+.table .table__atun2{
+
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius: 5px solid var(--color-primary);
+  border: 2px solid #000;
+  
+
+
+}
